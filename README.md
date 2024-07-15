@@ -1,4 +1,4 @@
-Required libraries and Dataset:
+Required libraries:
  - Pandas 
  - Numpy 
  - Seaborn/Matplotlib 
