@@ -24,7 +24,7 @@ print(df.head())
 df.info()
 
 # explore the descriptive statistical measures of the dataset
-df.describe().T
+df.describe()
 
 
 # check the number of null values in the dataset columns wise
@@ -91,7 +91,7 @@ for i in range(3):
     print('Validation Accuracy : ', metrics.roc_auc_score(ytest, models[i].predict(xtest)))
     print()
 
-# plot the confusion matrix as well for the validation data using the Logistic Regression model
+# plot the confusion matrix as well for the validation data using the XGBClassifier model
 cm = confusion_matrix(ytest, models[1].predict(xtest))
 disp = ConfusionMatrixDisplay(confusion_matrix=cm)
 disp.plot()
